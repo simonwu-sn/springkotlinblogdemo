@@ -7,6 +7,7 @@ plugins {
     kotlin("plugin.spring") version "1.3.72"
     kotlin("plugin.jpa") version "1.3.72"
     kotlin("plugin.allopen") version "1.3.61"
+    kotlin("kapt") version "1.3.61"
 }
 
 group = "com.smartnews"
@@ -34,6 +35,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
     testImplementation("com.ninja-squad:springmockk:1.1.3")
+    kapt("org.springframework.boot:spring-boot-configuration-processor")
 }
 
 allOpen {
